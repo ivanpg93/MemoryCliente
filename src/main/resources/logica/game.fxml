@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logica.GameController">
+    <children>
+        <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane fx:id="gt_tablero" alignment="CENTER" prefHeight="420.0" prefWidth="780.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <VBox.margin>
+                        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+                    </VBox.margin>
+                </GridPane>
+                <Label fx:id="lb_intento" text="Intentos: " />
+                <Label fx:id="lb_tiempo" text="Tiempo:">
+               <VBox.margin>
+                  <Insets bottom="24.0" />
+               </VBox.margin></Label>
+            <Button fx:id="btn_salirPartida" mnemonicParsing="false" onAction="#onActionSalirPartida" text="Salir partida" />
+            </children>
+        </VBox>
+    </children>
+    <opaqueInsets>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

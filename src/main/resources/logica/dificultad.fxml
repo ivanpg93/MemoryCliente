@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logica.DificultadController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="ELIGE LA DIFICULTAD" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btnFacil" alignment="CENTER" mnemonicParsing="false" onAction="#onActionFacil" text="Fácil" textAlignment="CENTER" />
+                  <Button fx:id="btnNormal" alignment="CENTER" mnemonicParsing="false" onAction="#onActionNormal" text="Normal" textAlignment="CENTER" />
+                  <Button fx:id="btnDificil" alignment="CENTER" mnemonicParsing="false" onAction="#onActionDificil" text="Difícil" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

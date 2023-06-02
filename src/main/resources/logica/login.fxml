@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logica.LoginController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <Text stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" underline="true">
+                    <font>
+                        <Font name="Comic Sans MS" size="50.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="TOP_CENTER" spacing="10.0">
+                    <children>
+                        <Label minWidth="50.0" text="Usuario" />
+                        <TextField fx:id="txtUsuario" minWidth="200.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="TOP_CENTER" spacing="10.0">
+                    <children>
+                        <Label minWidth="50.0" text="Email" />
+                        <TextField fx:id="txtEmail" minWidth="200.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="btnLogin" alignment="CENTER" mnemonicParsing="false" onAction="#onActionLogin" text="Login" textAlignment="CENTER" />
+                        <Button fx:id="btnRegistro" alignment="CENTER" mnemonicParsing="false" onAction="#onActionRegistrar" text="Registrarse" textAlignment="CENTER" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <VBox alignment="BOTTOM_CENTER" prefHeight="150.0" prefWidth="100.0">
+                    <children>
+                        <TextArea fx:id="lvLogger" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="100.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
